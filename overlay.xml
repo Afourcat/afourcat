@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+	<repo quality="experimental" status="unofficial">
+		<name>afourcat</name>
+		<description>Afourcat's Gentoo Overlay</description>
+        <homepage>https://github.com/afourcat/afourcat</homepage>
+		<owner type="project">
+			<email>afourcat at epitech.eu</email>
+			<name>Alexandre Fourcat</name>
+		</owner>
+		<source type="git">https://github.com/afourcat/afourcat.git</source>
+		<source type="git">git+ssh://git@github.com:afourcat/afourcat.git</source>
+		<feed>https://github.com/afourcat/afourcat/commits/master.atom</feed>
+	</repo>
+</repositories>
