@@ -6,7 +6,7 @@
 		<description>Afourcat's Gentoo Overlay</description>
         <homepage>https://github.com/afourcat/afourcat</homepage>
 		<owner type="project">
-			<email>afourcat at epitech.eu</email>
+			<email>afourcat@epitech.eu</email>
 			<name>Alexandre Fourcat</name>
 		</owner>
 		<source type="git">https://github.com/afourcat/afourcat.git</source>
