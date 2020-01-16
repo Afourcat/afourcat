@@ -12,12 +12,11 @@ EGIT_REPO_URI="https://github.com/minus7/redshift.git"
 
 LICENSE="MIT"
 SLOT="HEAD"
-IUSE=""
 RESTRICT="mirror"
-KEYWORDS=""
+KEYWORDS="~adm64"
+IUSE="drm xcb geoclue appindicator"
 
 src_configure() {
-	echo "${PV} ${PN}"
 	${S}/bootstrap
 	${S}/configure
 }
