@@ -2,7 +2,7 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 DESCRIPTION="The Neko Virtual Machine"
 HOMEPAGE="https://nekovm.org"
@@ -16,7 +16,6 @@ IUSE="+ssl +regexp apache mysql gtk sqlite debug"
 DEPEND="
 	dev-libs/boehm-gc
 	sys-libs/zlib
-
 	regexp? ( dev-libs/libpcre )
 	ssl? (
 			 dev-libs/openssl:0
@@ -32,7 +31,6 @@ RDEPEND="
 	dev-libs/boehm-gc
 	sys-libs/zlib
 	regexp? ( dev-libs/libpcre )
-
 	ssl? (
 			 dev-libs/openssl
 			 net-libs/mbedtls
@@ -57,6 +55,5 @@ src_configure() {
 		"-DNEKO_JIT_DEBUG=$(usex debug)"
 		"-DRUN_LDCONFIG=no"
 	)
-
 	cmake-utils_src_configure
 }
